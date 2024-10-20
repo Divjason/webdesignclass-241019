@@ -31,6 +31,7 @@ liTags.forEach((li) => {
 // 뒤에서 대기하고 있던 슬라이드 아이템이 자연스럽게 나타난다
 // 마지막 슬라이드 아이템이 자연스럽게 사라지게 되면, 첫번째 슬라이드 아이템이 다시 나타날 수 있도록 해준다
 
+/* Slide */
 const slides = document.querySelectorAll(".imgslide a");
 slides.forEach((slide, index) => {
   if (index > 0) slide.style.display = "none";
@@ -49,4 +50,25 @@ slides.forEach((slide, index) => {
       slides[currentIndex].style.opacity = 1;
     }, 10);
   }, 3000);
+});
+
+/* Modal */
+// 0.html 모달창을 만들어서 준비 (*평상시에는 노출x)
+// 1.웹 브라우저에게 1번 아이템을 알려줘야한다
+// 2.공지사항 1번 아이템을 클릭한다
+// 3.사용자가 클릭했을 때, 모달창이 나타나도록해준다 => 클릭 시, 이벤트 실행
+// 4.이벤트가 정상적으로 실행 => 모달창
+// 6.모달창 안에 닫기 기능 버튼을 준비
+// 7.닫기 기능 버튼을 클릭하면 모달이 사라지도록
+
+const noticeList = document.querySelector(".notice li:first-child");
+const modal = document.querySelector("#modal");
+const btn = document.querySelector(".btn");
+
+noticeList.addEventListener("click", () => {
+  modal.classList.add("active");
+});
+
+btn.addEventListener("click", () => {
+  modal.classList.remove("active");
 });
