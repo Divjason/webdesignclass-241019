@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  width: 100%;
+  min-width: 1000px;
+  height: 100vh;
+  display: flex;
+}
+
+header {
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+.top {
+  width: 100%;
+  height: calc(100vh - 100px);
+  border: 1px solid #ccc;
+}
+
+.logo {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #ccc;
+}
+
+.menu {
+  width: 190px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+}
+
+.bottom {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+}
+
+main {
+  width: calc(100% - 200px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bodywrap {
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex;
+  border: 1px solid #ccc;
+}
+
+.contents {
+  width: 400px;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+#banner {
+  width: 100%;
+  height: 130px;
+  border: 1px solid #ccc;
+}
+
+.notice {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+.gallery {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+.shortcut {
+  width: 100%;
+  height: 90px;
+  border: 1px solid #ccc;
+}
+
+.imgslide {
+  width: calc(100% - 400px);
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  border: 1px solid #ccc;
+}
+
+.copy {
+  width: calc(100% - 270px);
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+.sns {
+  width: 270px;
+  height: 100%;
+  border: 1px solid #ccc;
+}
