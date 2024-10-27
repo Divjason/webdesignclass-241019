@@ -26,31 +26,90 @@ body {
 
 header {
   width: 200px;
-  border: 1px solid #ccc;
+  background: #171c61;
 }
 
 .top {
   width: 100%;
   height: calc(100vh - 100px);
-  border: 1px solid #ccc;
 }
 
 .logo {
   width: 100%;
   height: 120px;
-  border: 1px solid #ccc;
+}
+
+.logo img {
+  width: 190px;
+}
+
+.btlogo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btlogo img {
+  width: auto;
+  height: 100px;
 }
 
 .menu {
   width: 190px;
   margin-left: 10px;
-  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.navi > li {
+  width: 100%;
+  height: 50px;
+}
+
+.navi > li > a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  font: bold 16px/50px "arial";
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navi > li > a:hover {
+  background: #ffe200;
+  color: #000;
+}
+
+.submenu {
+  width: 100%;
+  position: relative;
+  left: 188px;
+  top: -50px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.submenu > li > a {
+  display: inline-block;
+  width: 190px;
+  height: 50px;
+  font: bold 14px/50px "arial";
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+.submenu > li > a:hover {
+  background: #ffe200;
+  color: #000;
 }
 
 .bottom {
   width: 100%;
   height: 100px;
-  border: 1px solid #ccc;
+  background: #aeadad;
 }
 
 main {
@@ -64,60 +123,247 @@ main {
   width: 100%;
   height: calc(100% - 100px);
   display: flex;
-  border: 1px solid #ccc;
 }
 
 .contents {
   width: 400px;
   height: 100%;
-  border: 1px solid #ccc;
 }
 
 #banner {
   width: 100%;
-  height: 130px;
-  border: 1px solid #ccc;
+  height: 120px;
+}
+
+#banner > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+#banner img {
+  width: 15%;
+  height: auto;
+}
+
+#banner .bntext {
+  width: 75%;
+  font-size: 16px;
+  transition: font-weight 0.3s;
+}
+
+#banner .bntext:hover {
+  font-weight: bold;
 }
 
 .notice {
   width: 100%;
   height: 200px;
-  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.notice li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.notice li:hover {
+  font-weight: bold;
+}
+
+.tab {
+  width: 380px;
+  height: 50px;
+  border-top: 2px solid #c2c2c2;
+}
+
+.tab h4 {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  color: #000;
 }
 
 .gallery {
   width: 100%;
   height: 200px;
-  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.gallery ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery li {
+  width: 180px;
+  height: 150px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.gallery li:hover {
+  opacity: 0.5;
+}
+
+.gallery a {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery img {
+  width: auto;
+  height: 125px;
 }
 
 .shortcut {
-  width: 100%;
+  width: 380px;
   height: 90px;
-  border: 1px solid #ccc;
+  border-top: 2px solid #c2c2c2;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.shortcut img {
+  width: 70px;
+  height: 70px;
+}
+
+.shortcut img:hover {
+  opacity: 0.5;
 }
 
 .imgslide {
   width: calc(100% - 400px);
   height: 100%;
-  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+}
+
+.slidelist {
+  width: 300%;
+  height: 100%;
+}
+
+.slidelist ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slidelist li {
+  width: calc(100% / 3);
+}
+
+.slidelist img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slidelist span {
+  position: absolute;
+  top: 50%;
+  margin-left: -50%;
+  width: 400px;
+  height: 50px;
+  background: rgba(40, 40, 40, 0.5);
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  transform: translate(-50%, -50%);
+}
+
+#modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal.active {
+  display: flex;
+}
+
+.modal_up {
+  width: 400px;
+  height: 300px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.uptitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upbody {
+  font-size: 16px;
+}
+
+.btn {
+  align-self: flex-end;
+  background: #eee;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 footer {
   width: 100%;
   height: 100px;
   display: flex;
-  border: 1px solid #ccc;
+  background: #aeadad;
 }
 
 .copy {
   width: calc(100% - 270px);
   height: 100%;
-  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sns {
   width: 270px;
   height: 100%;
-  border: 1px solid #ccc;
+}
+
+.sns ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sns img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: opacity 0.3s;
+}
+
+.sns img:hover {
+  opacity: 0.5;
 }
