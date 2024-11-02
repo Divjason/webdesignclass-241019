@@ -10,33 +10,192 @@
   <body>
     <header>
       <div class="top">
-        <div class="logo">로고영역</div>
+        <div class="logo">
+          <a href="#">
+            <img src="./images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div id="menu_bg"></div>
         <nav class="menu">
           <ul class="navi">
-            <li><a href="#">과일/채소</a></li>
-            <li><a href="#">축산</a></li>
-            <li><a href="#">수산</a></li>
-            <li><a href="#">유제품</a></li>
-            <li><a href="#">할인상품</a></li>
+            <li>
+              <a href="#">과일/채소</a>
+              <ul class="submenu">
+                <li><a href="#">감자/고구마</a></li>
+                <li><a href="#">버섯종류</a></li>
+                <li><a href="#">나물종류</a></li>
+                <li><a href="#">냉장과일</a></li>
+                <li><a href="#">냉동과일</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">축산</a>
+              <ul class="submenu">
+                <li><a href="#">돼지고기</a></li>
+                <li><a href="#">소고기</a></li>
+                <li><a href="#">닭/오리고기</a></li>
+                <li><a href="#">계란</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">수산</a>
+              <ul class="submenu">
+                <li><a href="#">생선</a></li>
+                <li><a href="#">조개</a></li>
+                <li><a href="#">새우</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">유제품</a>
+              <ul class="submenu">
+                <li><a href="#">우유/두유</a></li>
+                <li><a href="#">버터/마가린</a></li>
+                <li><a href="#">치즈</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">할인상품</a>
+              <ul class="submenu">
+                <li><a href="#">일회용품</a></li>
+                <li><a href="#">과자류</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div class="imgslide">이미지슬라이드영역</div>
+      <div class="imgslide">
+        <div class="slidelist">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/img1.jpg" alt="img1">
+                <span>여름맞이 과일 세일</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img2.jpg" alt="img2">
+                <span>스낵류 균일가</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img3.jpg" alt="img3">
+                <span>3만원 이상 구매 시 전국 어디든 무료배송</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="bodywrap">
-        <div class="shortcut">바로가기영역</div>
+        <div class="shortcut">
+          <a href="#">
+            <img src="./images/shortcut1.png" alt="shortcut1">
+          </a>
+          <a href="#">
+            <img src="./images/shortcut2.png" alt="shortcut2">
+          </a>
+          <a href="#">
+            <img src="./images/shortcut3.png" alt="shortcut3">
+          </a>
+          <a href="#">
+            <img src="./images/shortcut4.png" alt="shortcut4">
+          </a>
+          <a href="#">
+            <img src="./images/shortcut5.png" alt="shortcut5">
+          </a>
+          <a href="#">
+            <img src="./images/shortcut6.png" alt="shortcut6">
+          </a>
+          <a href="#">
+            <img src="./images/shortcut7.png" alt="shortcut7">
+          </a>
+        </div>
         <div class="contents">
-          <div class="notice">공지사항영역</div>
-          <div class="gallery">갤러리영역</div>
+          <div class="notice">
+            <div class="tab">
+              <h4>공지사항</h4>
+            </div>
+            <ul>
+              <li>
+                <a href="#">공지사항1</a>
+                <span>2024.11.02</span>
+              </li>
+              <li>
+                <a href="#">공지사항2</a>
+                <span>2024.11.02</span>
+              </li>
+              <li>
+                <a href="#">공지사항3</a>
+                <span>2024.11.02</span>
+              </li>
+              <li>
+                <a href="#">공지사항4</a>
+                <span>2024.11.02</span>
+              </li>
+            </ul>
+          </div>
+          <div class="gallery">
+            <div class="tab">
+              <h4>갤러리</h4>
+            </div>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/gallery1.jpg" alt="gallery1">
+                  <span>상품후기1</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/gallery2.jpg" alt="gallery2">
+                  <span>상품후기2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/gallery3.jpg" alt="gallery3">
+                  <span>상품후기3</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="layer">
+        <div class="layer_up">
+          <div class="uptitle">연휴기간 배송 휴무일 안내</div>
+          <div class="upbody">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa impedit autem molestiae enim at ullam itaque sit sed repellat eos iste ut ad nisi delectus minima porro, omnis id.
+          </div>
+          <div class="btn">닫기</div>
         </div>
       </div>
       <footer>
         <div class="bottom">
-          <div class="btmenu">하단메뉴영역</div>
-          <div class="copy">카피라이트영역</div>
+          <div class="btmenu">
+            <ul>
+              <li><a href="#">하단메뉴1</a></li>
+              <li><a href="#">하단메뉴2</a></li>
+              <li><a href="#">하단메뉴3</a></li>
+              <li><a href="#">하단메뉴4</a></li>
+              <li><a href="#">하단메뉴5</a></li>
+              <li><a href="#">하단메뉴6</a></li>
+            </ul>
+          </div>
+          <div class="copy">
+            COPYRIGHT&copy; by WEBDESIGN. ALL RIGHTS RESERVED
+          </div>
         </div>
-        <div class="familysite">패밀리사이트영역</div>
+        <div class="familysite">
+          <select>
+            <option value="#">패밀리사이트1</option>
+            <option value="#">패밀리사이트2</option>
+            <option value="#">패밀리사이트3</option>
+          </select>
+        </div>
       </footer>
     </main>
   </body>
